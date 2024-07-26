@@ -4,7 +4,7 @@ import { Body, Head, Html, Meta, Scripts } from "@tanstack/start";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import * as React from "react";
-import "~/globals.css";
+import styles from "../globals.css?inline";
 
 import { QueryClientProvider, type QueryClient } from "@tanstack/react-query";
 import { queryClient } from "../router";
@@ -44,6 +44,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 		<Html>
 			<Head>
 				<Meta />
+				<style>{styles}</style>
 			</Head>
 			<Body>
 				{children}
