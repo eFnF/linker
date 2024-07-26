@@ -10,6 +10,8 @@
 		"lint": "prettier --check '**/*' --ignore-unknown && eslint --ext .ts,.tsx ./app",
 		"format": "prettier --write '**/*' --ignore-unknown"
 	},
+	"packageManager": "pnpm@9.5.0",
+
 	"dependencies": {
 		"@radix-ui/react-label": "^2.1.0",
 		"@radix-ui/react-slot": "^1.1.0",
