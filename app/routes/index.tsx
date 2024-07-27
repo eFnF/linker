@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Label } from "~/components/ui/label";
 import { Loader2 } from "lucide-react";
 import { useUpsertLink } from "~/server";
+import logo from "../assets/efnf_logo.svg";
 
 export const Route = createFileRoute("/")({
 	component: Home,
@@ -44,7 +45,10 @@ function Home() {
 	};
 
 	return (
-		<div className="flex justify-center items-center min-h-screen">
+		<div className="flex flex-col justify-center items-center min-h-screen">
+			<div className="mb-6 w-40 h-40 flex items-center justify-center">
+				<img src={logo} alt="eFnF Logo" className="w-full h-full" />
+			</div>
 			<Card className="w-full max-w-xl">
 				<CardHeader>
 					<CardTitle className="text-2xl font-bold text-center">
