@@ -47,12 +47,12 @@ function Home() {
 	return (
 		<div className="flex flex-col justify-center items-center min-h-screen">
 			<div className="mb-6 w-40 h-40 flex items-center justify-center">
-				<img src={logo} alt="eFnF Logo" className="w-full h-full" />
+				<img src={logo} alt="eFNF Logo" className="w-full h-full" />
 			</div>
 			<Card className="w-full max-w-xl">
 				<CardHeader>
 					<CardTitle className="text-2xl font-bold text-center">
-						eFnF URL Shortener
+						eFNF URL Shortener
 					</CardTitle>
 				</CardHeader>
 				<CardContent>
@@ -71,7 +71,7 @@ function Home() {
 						{status === "pending" ? (
 							<Button disabled className="w-full">
 								<Loader2 className="mr-2 h-4 w-4 animate-spin" />
-								Generating eFnF URL
+								Generating eFNF URL
 							</Button>
 						) : (
 							<Button type="submit" className="w-full">
